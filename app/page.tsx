@@ -1,8 +1,13 @@
+import { Hero } from '@/components/sections/Hero'
+import { CustomCursor } from '@/components/animations/CustomCursor'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <p className="text-red-500">Welcome to my portfolio!</p>
-    </div>
-  );
+    <>
+      <CustomCursor />
+      <main>
+        <Hero />
+      </main>
+    </>
+  )
 }
