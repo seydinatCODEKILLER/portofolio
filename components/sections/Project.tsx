@@ -38,55 +38,55 @@ interface Project {
 ───────────────────────────────────────── */
 const projectsData: Project[] = [
   {
-    id: 'saas-dashboard',
-    title: 'SaaS Analytics Dashboard',
-    image: '/images/projects/dashboard.png',
+    id: 'saas-organizely',
+    title: 'SaaS Organizations Dashboard',
+    image: '/images/projects/dashbaord.png',
     problem: 'Les équipes perdaient des heures à compiler des données éparpillées dans 5 outils différents.',
     solution: 'Une plateforme unifiée qui centralise toutes les métriques en temps réel avec des visualisations interactives.',
-    stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Recharts'],
+    stack: ['React.js', 'TypeScript', 'MongoDB', 'Prisma', 'Recharts'],
     role: 'Lead Developer & Architecte',
     results: ['−70% de temps de reporting', '3x plus rapide', '200+ utilisateurs actifs'],
     category: 'SaaS',
-    links: { live: 'https://example.com', github: 'https://github.com' },
+    links: { live: 'https://perle-front.vercel.app/', github: 'https://github.com/seydinatCODEKILLER/perle-front.git' },
     color: 'from-violet-500 to-purple-600',
   },
   {
     id: 'ecommerce-platform',
-    title: 'Plateforme E-commerce',
-    image: '/images/projects/ecommerce.png',
+    title: 'Plateforme Financiere',
+    image: '/images/projects/money.png',
     problem: 'Un client vendait 200 produits sur des marketplaces avec des marges réduites à cause des commissions.',
     solution: 'Boutique propriétaire avec paiement intégré, gestion des stocks et tableau de bord vendeur.',
     stack: ['React', 'Node.js', 'Stripe', 'MongoDB', 'Redis'],
     role: 'Full Stack Developer',
     results: ['+40% de marge nette', '0% de commissions', '1 200 commandes/mois'],
     category: 'Frontend',
-    links: { live: 'https://example.com' },
+    links: { live: 'https://frontend-money.vercel.app/' },
     color: 'from-cyan-500 to-blue-600',
   },
   {
     id: 'mobile-fitness',
     title: 'App Fitness Mobile',
-    image: '/images/projects/fitness.png',
+    image: '/images/projects/phone.png',
     problem: 'Les coachs géraient leurs clients par WhatsApp — aucun suivi structuré ni historique.',
     solution: 'Application mobile complète avec plans personnalisés, suivi des séances et messagerie intégrée.',
     stack: ['React Native', 'Expo', 'Supabase', 'TypeScript'],
     role: 'Mobile Developer',
     results: ['4.8★ sur l\'App Store', '500+ téléchargements', '30 coachs onboardés'],
     category: 'Mobile',
-    links: { github: 'https://github.com' },
+    links: { github: 'https://github.com/seydinatCODEKILLER/Frontend-Money.git' },
     color: 'from-emerald-500 to-teal-600',
   },
   {
     id: 'api-gateway',
-    title: 'API Gateway Microservices',
-    image: '/images/projects/api.png',
+    title: 'API Gateway Moneytize',
+    image: '/images/projects/dashbaord.png',
     problem: 'Une architecture monolithique qui ne tenait plus la charge aux heures de pointe.',
-    solution: 'Migration vers microservices avec gateway centralisée, rate limiting et monitoring en temps réel.',
-    stack: ['Node.js', 'Docker', 'Kubernetes', 'RabbitMQ', 'Grafana'],
+    solution: 'Migration vers une architecture en couche avec gateway centralisée, rate limiting et monitoring en temps réel.',
+    stack: ['Node.js', 'Prisma', 'Cloudinary', 'Brevo', 'TypeScript'],
     role: 'Backend & DevOps',
     results: ['−60% de latence', '99.9% uptime', '10x la capacité'],
     category: 'Backend',
-    links: { github: 'https://github.com' },
+    links: { github: 'https://github.com/seydinatCODEKILLER/Backend-Money.git' },
     color: 'from-orange-500 to-red-600',
   },
 ]
@@ -382,7 +382,7 @@ export const Project = () => {
               onMouseLeave={() => setCursorType('default')}
               className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-300
                 ${active === filter
-                  ? 'bg-primary text-white border-primary shadow-glow-sm'
+                  ? 'bg-primary text-background border-primary shadow-glow-sm'
                   : 'bg-card/50 border-border/50 text-muted-foreground hover:border-primary/40 hover:text-foreground'
                 }`}
             >

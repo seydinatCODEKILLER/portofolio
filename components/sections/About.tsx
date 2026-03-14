@@ -3,30 +3,11 @@
 import { useRef } from 'react'
 import { useScrollReveal } from '@/hooks/useScrollReveal'
 import { MorphingAvatar } from '@/components/animations/MorphingAvatar'
-import { Timeline } from '@/components/animations/Timeline'
 import { AnimatedStats } from '@/components/animations/AnimatedStats'
 import { useStore } from '@/store/useStore'
 import { Badge } from '@/components/ui/badge'
 import { Card } from '@/components/ui/card'
 import { Code2, Heart, Target, Zap } from 'lucide-react'
-
-const timelineData = [
-  {
-    year: '2020 - Aujourd\'hui',
-    title: 'Lead Developer chez Innovatech',
-    description: 'Création d\'applications SaaS innovantes pour des startups en croissance.'
-  },
-  {
-    year: '2018 - 2020',
-    title: 'Full Stack Developer Freelance',
-    description: 'Accompagnement de clients dans leur transformation digitale.'
-  },
-  {
-    year: '2015 - 2018',
-    title: 'Études en Informatique',
-    description: 'Master en Développement Web et Architecture Logicielle.'
-  }
-]
 
 const statsData = [
   { value: 5, label: 'Années d\'expérience', suffix: '+' },
@@ -167,14 +148,6 @@ export const About = () => {
               </div>
             </div>
           </Card>
-
-          {/* Timeline */}
-          <div>
-            <h3 className="text-2xl font-semibold text-center mb-12">
-              Mon parcours
-            </h3>
-            <Timeline items={timelineData} />
-          </div>
 
           {/* Statistiques */}
           <div className="pt-8">
