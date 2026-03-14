@@ -3,6 +3,8 @@ import { CustomCursor } from "@/components/animations/CustomCursor";
 import { About } from "@/components/sections/About";
 import { ThemeToggle } from "@/components/themes/theme-toggle";
 import { Skills } from "@/components/sections/Skills";
+import { Project } from "@/components/sections/Project";
+import { Playground } from "@/components/sections/Playground";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
+        <Project  />
+        <Playground />
       </main>
     </>
   );
