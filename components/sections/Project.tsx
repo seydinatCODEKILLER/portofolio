@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger)
 ───────────────────────────────────────── */
 type FilterCategory = 'Tous' | 'Frontend' | 'Backend' | 'SaaS' | 'Mobile'
 
-interface Project {
+export interface Project {
   id: string
   title: string
   image: string
@@ -36,7 +36,7 @@ interface Project {
 /* ─────────────────────────────────────────
    DONNÉES (à remplacer par les vrais projets)
 ───────────────────────────────────────── */
-const projectsData: Project[] = [
+export const projectsData: Project[] = [
   {
     id: 'saas-organizely',
     title: 'SaaS Organizations Dashboard',
