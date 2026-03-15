@@ -30,7 +30,7 @@ export interface Project {
     live?: string
     github?: string
   }
-  color: string // accent color class
+  color: string
 }
 
 /* ─────────────────────────────────────────

@@ -36,19 +36,19 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com",
+    href: "https://github.com/seydinatCODEKILLER",
     color: "hover:text-white",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/seydina-thiam-800285226/",
     color: "hover:text-blue-400",
   },
   {
     icon: Mail,
     label: "Email",
-    href: "mailto:contact@tondomaine.com",
+    href: "mailto:seydinat235@gmail.com",
     color: "hover:text-violet-400",
   },
 ];
